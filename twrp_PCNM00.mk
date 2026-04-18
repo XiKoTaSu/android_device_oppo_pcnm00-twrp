@@ -15,10 +15,10 @@
 #
 
 # Release name
-PRODUCT_RELEASE_NAME := X2
-DEVICE_PATH := device/realme/X2
+PRODUCT_RELEASE_NAME := PCNM00
+DEVICE_PATH := device/OPPO/PCNM00
 
-$(call inherit-product, device/realme/X2/device.mk)
+$(call inherit-product, device/OPPO/PCNM00/device.mk)
 
 # Inherit from common AOSP config
 $(call inherit-product, $(SRC_TARGET_DIR)/product/base.mk)
@@ -28,8 +28,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit_only.mk)
 $(call inherit-product, vendor/twrp/config/common.mk)
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := X2
-PRODUCT_NAME := twrp_X2
-PRODUCT_BRAND := Realme
-PRODUCT_MODEL := Realme X2
-PRODUCT_MANUFACTURER := Realme
+PRODUCT_DEVICE := PCNM00
+PRODUCT_NAME := twrp_PCNM00
+PRODUCT_BRAND := OPPO
+PRODUCT_MODEL := OPPO K5
+PRODUCT_MANUFACTURER := OPPO

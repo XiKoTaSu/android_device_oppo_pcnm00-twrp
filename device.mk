@@ -15,7 +15,7 @@
 #
 
 # Api
-PRODUCT_SHIPPING_API_LEVEL := 28
+PRODUCT_SHIPPING_API_LEVEL := 30
 
 # Take a few libraries from sources
 TARGET_RECOVERY_DEVICE_MODULES += \

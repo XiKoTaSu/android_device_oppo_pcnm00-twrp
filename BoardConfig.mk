@@ -41,7 +41,7 @@ TARGET_BOARD_PLATFORM := sm6150
 TARGET_BOARD_PLATFORM_GPU := qcom-adreno640
 
 # Kernel
-BOARD_KERNEL_CMDLINE := console=ttyMSM0,115200n8 androidboot.hardware=qcom androidboot.console=ttyMSM0 androidboot.memcg=1 lpm_levels.sleep_disabled=1 video=vfb:640x400,bpp=32,memsize=3072000 msm_rtb.filter=0x237 service_locator.enable=1 swiotlb=1 androidboot.usbcontroller=a600000.dwc3 firmware_class.path=/vendor/firmware_mnt/image earlycon=msm_geni_serial,0x880000 loop.max_part=7 cgroup.memory=nokmem,nosocket androidboot.selinux=permissive buildvariant=eng
+BOARD_KERNEL_CMDLINE := console=ttyMSM0,115200n8 androidboot.hardware=qcom androidboot.console=ttyMSM0 androidboot.memcg=1 lpm_levels.sleep_disabled=1 video=vfb:640x400,bpp=32,memsize=3072000 msm_rtb.filter=0x237 service_locator.enable=1 swiotlb=1 androidboot.usbcontroller=a600000.dwc3 earlycon=msm_geni_serial,0x880000 loop.max_part=7 buildvariant=eng
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_PAGESIZE := 4096
 BOARD_KERNEL_TAGS_OFFSET := 0x00000100
@@ -84,8 +84,8 @@ BOARD_VENDORIMAGE_PARTITION_SIZE := 1631584256
 BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
 
 #Init
-#TARGET_INIT_VENDOR_LIB := libinit_realmex2
-#TARGET_RECOVERY_DEVICE_MODULES := libinit_realmex2
+#TARGET_INIT_VENDOR_LIB := libinit_OPPOPCNM00
+#TARGET_RECOVERY_DEVICE_MODULES := libinit_OPPOPCNM00
 
 # System as root
 BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
@@ -106,9 +106,9 @@ BOARD_HAS_LARGE_FILESYSTEM := true
 TARGET_RECOVERY_PIXEL_FORMAT := "BGRA_8888"
 
 # Crypto
-PLATFORM_VERSION := 99.87.36
+PLATFORM_VERSION := 11.0.0
 PLATFORM_VERSION_LAST_STABLE := $(PLATFORM_VERSION)
-PLATFORM_SECURITY_PATCH := 2127-12-31
+PLATFORM_SECURITY_PATCH := 2022-09
 VENDOR_SECURITY_PATCH := $(PLATFORM_SECURITY_PATCH)
 TW_INCLUDE_CRYPTO := true
 BOARD_USES_QCOM_FBE_DECRYPTION := true
@@ -136,7 +136,6 @@ TWRP_INCLUDE_LOGCAT := true
 TARGET_USES_LOGD := true
 TARGET_USES_MKE2FS := true
 TW_HAS_EDL_MODE := true
-TW_OZIP_DECRYPT_KEY := 1c4a11a3a12589ae441a23bb31517733
 TW_PREPARE_DATA_MEDIA_EARLY := true
 TW_SKIP_COMPATIBILITY_CHECK := true
 TW_EXCLUDE_APEX := true

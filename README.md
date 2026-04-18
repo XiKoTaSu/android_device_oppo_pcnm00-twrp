@@ -1,7 +1,7 @@
-# android_device_realme_X2
-For building TWRP for Realme X2
+# android_device_OPPO_PCNM00
+For building TWRP for OPPO K5
 
-TWRP device tree for Realme X2
+TWRP device tree for OPPO K5
 
 ## Features
 
@@ -33,14 +33,14 @@ Finally execute these:
 ```
 export ALLOW_MISSING_DEPENDENCIES=true
 . build/envsetup.sh
-lunch twrp_X2-eng
+lunch twrp_PCNM00-eng
 mka recoveryimage
 ```
 
 To test it:
 
 ```
-fastboot boot out/target/product/X2/recovery.img
+fastboot boot out/target/product/PCNM00/recovery.img
 ```
 
 ## Other Sources
