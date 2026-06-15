@@ -8,7 +8,6 @@ TWRP device tree for OPPO K5
 Works:
 
 - ADB
-- Decryption of /data
 - Screen brightness settings
 - Correct screenshot color
 - MTP
